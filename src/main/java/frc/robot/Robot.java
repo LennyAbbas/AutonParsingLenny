@@ -24,7 +24,7 @@ public class Robot extends TimedRobot {
 
     // figures out what the parameters are
     if (numberOfParameters != 0) {
-      arrOfParameters = key.split(Character.toString(parameterDivider));
+      arrOfParameters = key.substring(1).split(Character.toString(parameterDivider));
     }
 
     // plugs the parameters into the methods (I used shoot and move as an example)
